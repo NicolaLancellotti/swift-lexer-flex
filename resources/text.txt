@@ -1,0 +1,9 @@
+
+()[],;
+< <= > >= = <>
+if then else while for
+foo bar1 baz0z foo
+0 01 11
+0.1
+2E1 2E+1 2E-1
+0.2E1 0.2E+1 0.2E-1

@@ -1,6 +1,6 @@
-#line 1 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lex.yy.c"
+#line 1 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lex.yy.c"
 
-#line 3 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lex.yy.c"
+#line 3 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lex.yy.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -324,6 +324,9 @@ void yyfree ( void *  );
 #define YY_AT_BOL() (YY_CURRENT_BUFFER_LVALUE->yy_at_bol)
 
 /* Begin user sect3 */
+
+#define yywrap() (/*CONSTCOND*/1)
+#define YY_SKIP_YYWRAP
 typedef flex_uint8_t YY_CHAR;
 
 FILE *yyin = NULL, *yyout = NULL;
@@ -472,11 +475,11 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
-#line 2 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 1 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
+#line 4 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 #include "tokenKind.h"
-#line 478 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lex.yy.c"
-#line 479 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lex.yy.c"
+#line 481 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lex.yy.c"
+#line 482 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lex.yy.c"
 
 #define INITIAL 0
 
@@ -693,10 +696,10 @@ YY_DECL
 		}
 
 	{
-#line 14 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 16 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 
 
-#line 699 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lex.yy.c"
+#line 702 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -755,125 +758,125 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 16 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 18 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 { return TOKEN_L_PAREN; }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 17 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 19 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 { return TOKEN_R_PAREN; }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 18 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 20 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 { return TOKEN_L_SQUARE; }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 19 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 21 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 { return TOKEN_R_SQUARE; }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 20 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 22 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 { return TOKEN_COMMA; }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 21 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 23 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 { return TOKEN_SEMI; }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 23 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 25 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 { return TOKEN_OP_REL_LT; }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 24 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 26 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 { return TOKEN_OP_REL_LE; }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 25 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 27 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 { return TOKEN_OP_REL_EQ; }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 26 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 28 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 { return TOKEN_OP_REL_NE; }
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 27 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 29 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 { return TOKEN_OP_REL_GT; }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 28 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 30 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 { return TOKEN_OP_REL_GE; }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 30 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 32 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 { return TOKEN_IF; }
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 31 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 33 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 { return TOKEN_THEN; }
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 32 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 34 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 { return TOKEN_ELSE; }
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 33 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 35 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 { return TOKEN_WHILE; }
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 34 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 36 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 { return TOKEN_FOR; }
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 36 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 38 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 { return TOKEN_ID; }
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 38 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 40 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 { return TOKEN_NCONST; }
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 39 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 41 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 { return TOKEN_FCONST; }
 	YY_BREAK
 case 21:
 /* rule 21 can match eol */
 YY_RULE_SETUP
-#line 40 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 42 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 {}
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 42 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 44 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 {return TOKEN_ERROR; }
 	YY_BREAK
 case YY_STATE_EOF(INITIAL):
-#line 43 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 45 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 {return TOKEN_EOF; }
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 45 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 47 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 ECHO;
 	YY_BREAK
-#line 876 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lex.yy.c"
+#line 879 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lex.yy.c"
 
 	case YY_END_OF_BUFFER:
 		{
@@ -1876,6 +1879,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 45 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 47 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
+
 
 

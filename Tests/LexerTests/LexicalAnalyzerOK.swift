@@ -1,5 +1,5 @@
 import XCTest
-import lexer
+import Lexer
 
 class LexicalAnalyzerOK: XCTestCase {
   

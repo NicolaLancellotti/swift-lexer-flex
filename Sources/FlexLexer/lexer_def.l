@@ -1,3 +1,5 @@
+%option noyywrap
+
 %{
 #include "tokenKind.h"
 %}
@@ -43,3 +45,4 @@ for         { return TOKEN_FOR; }
 <<EOF>>     {return TOKEN_EOF; }
 
 %%
+

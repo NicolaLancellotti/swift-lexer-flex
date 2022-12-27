@@ -1,7 +1,8 @@
 import Foundation
+import FlexLexer
 
 public struct Token {
-  public let kind: TokenKind
+  public let kind: FlexLexer.TokenKind
   public let attribute: String
 }
 

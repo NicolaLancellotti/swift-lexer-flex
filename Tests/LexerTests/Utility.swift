@@ -1,5 +1,5 @@
 import Foundation
-import lexer
+import Lexer
 
 func makeLexer(text: String) -> Lexer {
   let stream = LexerInputStream(string: text)

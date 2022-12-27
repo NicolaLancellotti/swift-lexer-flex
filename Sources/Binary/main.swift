@@ -1,5 +1,5 @@
 import Foundation
-import lexer
+import Lexer
 
 let text = """
 \n\t
@@ -13,9 +13,10 @@ foo bar1 baz0z foo
 0.2E1 0.2E+1 0.2E-1
 """
 
-//let stream = LexerInputStream(path: "./text.txt")
-//  let stream = LexerInputStream.standardInput
-let stream = LexerInputStream(string: text)
+let path = Bundle.module.url(forResource: "text", withExtension: "txt")!.relativePath
+let stream = LexerInputStream(path: path)
+//let stream = LexerInputStream.standardInput
+//let stream = LexerInputStream(string: text)
 
 let lexer = Lexer(stream: stream)
 print("Tokens:\n")

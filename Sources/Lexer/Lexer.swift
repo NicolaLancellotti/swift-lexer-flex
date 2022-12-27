@@ -1,4 +1,5 @@
 import Foundation
+import FlexLexer
 
 public class Lexer {
   
@@ -7,7 +8,7 @@ public class Lexer {
   public init(stream:  LexerInputStream) {
     precondition(Lexer.stream == nil)
     Lexer.stream = stream
-    yyrestart(stream.handle)
+    FlexLexer.yyrestart(stream.handle)
     self.stringsTable = StringsTable()
   }
   

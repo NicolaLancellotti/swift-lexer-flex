@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/nicola/Developer/github/swift-lexer-flex/swift-lexer-flex.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>

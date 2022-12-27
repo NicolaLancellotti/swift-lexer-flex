@@ -2,9 +2,9 @@
 #define yyHEADER_H 1
 #define yyIN_HEADER 1
 
-#line 5 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lex.yy.h"
+#line 5 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lex.yy.h"
 
-#line 7 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lex.yy.h"
+#line 7 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lex.yy.h"
 
 #define  YY_INT_ALIGNED short int
 
@@ -203,6 +203,9 @@ void *yyrealloc ( void *, yy_size_t  );
 void yyfree ( void *  );
 
 /* Begin user sect3 */
+
+#define yywrap() (/*CONSTCOND*/1)
+#define YY_SKIP_YYWRAP
 
 extern int yylineno;
 
@@ -467,9 +470,9 @@ extern int yylex (void);
 #undef yyTABLES_NAME
 #endif
 
-#line 45 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lexer_def.l"
+#line 47 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lexer_def.l"
 
 
-#line 473 "/Users/nicola/Developer/github/swift-lexer-flex/lexer/flex/lex.yy.h"
+#line 476 "/Users/nicola/Developer/github/swift-lexer-flex/Sources/FlexLexer/lex.yy.h"
 #undef yyIN_HEADER
 #endif /* yyHEADER_H */
